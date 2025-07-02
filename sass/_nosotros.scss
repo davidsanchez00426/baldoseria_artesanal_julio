@@ -1,0 +1,46 @@
+@use 'variables';
+
+.parrafonosotros {
+  font-family: variables.$font-secundaria;
+  text-align: center;
+}
+.mitadnosotros{
+
+  background: variables.$nosotros-bg;
+}
+.grid-nosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  margin-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
+  img.manuydavid {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px variables.$azul-principal;
+  }
+}
+
+.texto-nosotros {
+  text-align: center;
+  padding: 0 2rem;
+
+  h3.camino {
+    font-family: variables.$font-principal;
+    color: variables.$color-hover;
+    margin-bottom: 1rem;
+  }
+
+  p.pfinal {
+    font-family: variables.$font-secundaria;
+    line-height: 1.6;
+  }
+}

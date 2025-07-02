@@ -1,0 +1,43 @@
+@use 'variables';
+@use 'base';
+
+.tienda1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+.mitadinterna {
+   background-color: variables.$contacto-bg;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    flex-wrap: wrap;
+}
+
+.items1 {
+  width: 100%;
+  max-width: 400px;
+}
+
+.t1,
+.t2,
+.t3 {
+  width: 100%;
+  max-width: 450px;
+  height: 330px;
+  object-fit: cover;
+  margin-right: 25px;
+  margin-bottom: 1rem;
+
+  @media (max-width: 768px) {
+    margin-right: 0;
+  }
+}
+

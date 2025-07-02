@@ -1,0 +1,5 @@
+@use 'variables';
+
+.contactocolor {
+  background-color: variables.$contacto-bg;
+}

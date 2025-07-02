@@ -1,0 +1,60 @@
+@use 'variables';
+
+.boton {
+  margin: 2vw;
+  padding: 5vw;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.redessoc {
+  display: flex;
+  justify-content: right;
+}
+
+.redessoc img,
+.facebook img {
+  max-width: 40px;
+  height: auto;
+
+  @media (max-width: 768px) {
+    max-width: 24px;
+  }
+}
+
+select {
+  color: variables.$color-select;
+
+  &:hover {
+    background-color: variables.$color-select-hover;
+  }
+}
+
+a:visited {
+  color: variables.$color-visited;
+}
+
+.volver-tienda {
+  margin: 3rem;
+  text-align: left;
+
+  .btn-regreso {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-family: variables.$font-principal;
+    color: white;
+    background-color: variables.$color-hover;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color:variables.$color-hover;
+    }
+  }
+}

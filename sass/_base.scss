@@ -1,0 +1,65 @@
+@use 'variables';
+
+@font-face {
+font-family: 'david';
+src: url('../assets/boogaloo-regular.ttf');
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html, body {
+height: 100%;
+}
+
+body {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+max-width: 100vw;
+overflow-x: hidden;
+padding: 2rem;
+font-family: variables.$font-principal;
+
+
+     @media (max-width: 768px) {
+     padding: 1rem;
+  }
+
+}
+
+
+h1{
+        color:variables.$color-hover;
+    text-align: center;
+    font-family: david;
+ }  
+
+.uni {
+    background-color: gray;
+    display: inline-flex;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    height: 200px;
+    vertical-align: middle;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 2%;
+}
+
+.derechos, .medellin {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+.redessoc {
+    display: flex;
+    justify-content: right;
+}
+

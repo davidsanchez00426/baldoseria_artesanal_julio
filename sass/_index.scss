@@ -1,0 +1,106 @@
+@use 'variables';
+
+
+.arriba {
+    background-color: variables.$arriba-bg;
+}
+
+.headerprincipal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding-left: 0;
+
+    li {
+      a {
+        text-decoration: none;
+        color: variables.$gris-oscuro;
+        font-family: variables.$font-principal;
+        font-size: medium;
+
+        &:visited {
+          color: variables.$verde-visitado;
+        }
+
+        &:hover {
+          color: variables.$color-hover;
+        }
+      }
+    }
+  }
+}
+.mitad {
+   background-color: variables.$mitad-bg;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    flex-wrap: wrap;
+
+
+     @media (max-width: 768px) {
+     height: fit-content;
+  }
+}
+
+.img1, .img2, .vid1, .map1 {
+    width: 100%;
+    max-width: 450px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-bottom: 1rem;
+}
+
+.logo1 {
+  height: auto;
+  max-width: 150px;
+  border-radius: 30px;
+  border: 2px solid black;
+
+  @media (max-width: 1024px) {
+    max-width: 120px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100px;
+  }
+}
+
+.px {
+  display: flex;
+  font-size: 6vw;
+
+  @media (max-width: 768px) {
+    font-size: 8vw;
+  }
+}
+
+.inicialt {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+}
